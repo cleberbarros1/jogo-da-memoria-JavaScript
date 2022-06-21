@@ -1,0 +1,285 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background-image: url(cards/bg.jpg);
+    filter:saturate(1);
+    overflow-x: hidden;
+    font-family: Impact,'Courier New', Courier, monospace;
+
+}
+
+.container-hud-insig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-kof-xv {
+    width: 400px;
+    height: 160px;
+}
+
+.logo-kof-xv img {
+    width: 380px;
+    
+}
+
+.logo-kof-xv img {
+    width: 380px;
+}
+
+
+.div-insignias {
+
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.div-imagens {
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.elemento-img {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.elemento-img img{
+    width: 50px;
+    filter: grayscale(2);
+    cursor: pointer;
+
+}
+
+.elemento-img img:hover{
+    width: 50px;
+    filter: saturate(2);
+    cursor: pointer;
+
+}
+
+
+.hud {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 270px;
+    height: 200px;
+    padding: 20px;
+    left: 1%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 900px) {
+
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.container-cabecalho {
+    width: 50%;
+
+}
+
+.player-div{
+    display: flex;
+    width: 100%;
+    height: 34px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 21px;
+   
+}
+
+.div-input input{
+    padding: 0;
+    font-family: Impact,'Courier New', Courier, monospace;
+    font-size: 31px;
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+}
+
+
+.container-partidas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 24px;
+    
+}
+
+.texto-partidas {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#contador-partidas {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+
+.div-combo {
+    width: 45%;
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#combo {
+    width: 100%;
+    font-size: 68px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    transition: .3s;
+
+}
+
+
+.combo-text {
+    width: 100%;
+    font-size: 24px;
+    top: 0px;
+    Right: 0px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.div-placar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#num-placars {
+    font-size: 48px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.texto-placar {
+    font-size: 32px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+}
+
+
+
+.board-game-container {
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    padding: 0;
+}
+
+.card-container {
+    width: 180px;
+    height: 240px;
+    padding: 0px;
+    margin: 10px;
+
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transform-style: preserve-3d;
+
+}
+
+img {
+    width: 100%;
+    margin: 5px;
+    position: absolute;
+    
+}
+
+
+.front-card  {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    pointer-events: none;
+
+}
+
+.back-card {
+    backface-visibility: hidden;
+    transition: transform 1s;
+  
+}
+
+
+
+
+.ViraCarta .back-card {
+    transform: rotateY(180deg);
+}
+
+.ViraCarta .front-card {
+    transform: rotateY(360deg);
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(235, 10, 10);
+    margin-top: 50px;
+
+}
+
