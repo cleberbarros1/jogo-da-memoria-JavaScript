@@ -6,6 +6,9 @@ Agradecimento especial à todos os professores do Módulo de JS e em especial à
 
 Este projeto em específico foi baseado em um tema da famosa série de jogos de luta da SNK, o THE KING OF FIGHTERS.
 
+Link para acesso a aplicação pelo Github pages:
+https://cleberbarros1.github.io/jogo-da-memoria-JavaScript/
+
 Segue abaixo algumas imagens do projeto
 
 ![img1](img1.PNG)
